@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>videojs-marquee-overlay Demo</title>
+    <link href="css/video-js.css" rel="stylesheet">
+    <link href="css/videojs.watermark.css" rel="stylesheet">
+    <link href="css/videojs-logo-overlay.css" rel="stylesheet">
+    <link href="css/colorpick.css" rel="stylesheet">
+    <script src="js/video.js"></script>
+    <script src="js/videojs-logo-overlay.js"></script>
+    <style type="text/css">
+        .vjs-emre-marquee {
+            width: 100%;
+            overflow: hidden;
+            border: 1 px solid #ccc;
+            z-index: 9998;
+            position: absolute;
+            font-size: 100 px!important;
+            bottom: 20 px!important
+        }
+    </style>
+
+</head>
+
+<body>
+    select messagetype:
+    <select id="scrollMode">
+  <option value="V:T:B">vertical scrolling Top-Bottom</option>
+<option value="V:B:T">vertical scrolling Bottom-Top</option>
+  <option value="H:L:R">horizontal scrolling left-right</option>
+<option value="H:R:L">horizontal scrolling right-left</option>
+</select>
+    <br><br> Scrollspeed:
+    <input type="text" id="scrollspeed">
+    <br>
+    <br> Duration in sec:
+    <input type="text" id="durationSec">
+    <br>
+    <br> Player X-Position:
+    <input type="text" id="xpos">
+    <br>
+    <br> Player Y-Position:
+    <input type="text" id="ypos">
+    <br>
+    <br> font type:
+    <input type="text" id="fonttype">
+    <br>
+    <br> font size:
+    <input type="text" id="fontsize">
+    <br>
+    <br> Color:
+    <input id="colorpick" type="text" class="form-control" />
+    <br>
+    <br> Background Color:
+    <input id="bgcolor" type="text" class="form-control" />
+    <br>
+    <br> edit example text:
+    <input type="text" id="extext">
+    <br>
+    <br><br>
+    <button id="button">test message</button>
+    <button id="button1">stop message</button>
+
+    <br><br>
+    <div id="video-tag"></div>
+    <!-- <video id="videojs-marquee-overlay-player" class="video-js vjs-default-skin" controls width="848" height="480" data-setup='{"playbackRates": [1, 1.5, 2] }'>
+    <source src="http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8" type="application/x-mpegurl">
+</video> -->
+
+    <script src="js/videojs-marquee-overlay.js"></script>
+    <script src="js/videojs-contrib-hls.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/videojs5-hlsjs-source-handler.js"></script>
+    <script src="js/jquery.marquee.js"></script>
+    <script src="js/videojs.watermark.js"></script>
+    <script src="js/script_message.js"></script>
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+</body>
+
+</html>
